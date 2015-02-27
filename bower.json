@@ -1,5 +1,5 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "nogorads-client-page",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "foundation-icon-fonts": "*"
