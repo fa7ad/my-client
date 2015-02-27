@@ -1,6 +1,11 @@
-# Foundation libsass template
+# NogorAds client landing page template
+[![Dependency Status](https://david-dm.org/fa7ad/NogorAds.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds)
+[![devDependency Status](https://david-dm.org/fa7ad/NogorAds/dev-status.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds#info=devDependencies)
+[![Project is in Beta Stage](https://img.shields.io/badge/stage-beta-orange.svg?style=flat-square)](#)
+[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-red.svg?style=flat-square)](#)
 
-This is a template to start your own project that uses Grunt and libsass!
+
+This is a template for a nogorads landing page
 
 ## Requirements
 
@@ -12,14 +17,15 @@ You'll need to have the following items installed before continuing.
 
 ## Quickstart
 
-```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
+```
+git clone git@github.com:fa7ad/NogorAds.git
+npm install
+bower install
 ```
 
 While you're working on your project, run:
 
-`grunt`
+`grunt both`
 
 And you're set!
 
@@ -27,3 +33,4 @@ And you're set!
 
   * `scss/_settings.scss`: Foundation configuration settings go in here
   * `scss/app.scss`: Application styles go here
+  * `src/app.js`: Application Javascript go here
