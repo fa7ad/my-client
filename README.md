@@ -2,7 +2,7 @@
 [![Dependency Status](https://david-dm.org/fa7ad/NogorAds.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds)
 [![devDependency Status](https://david-dm.org/fa7ad/NogorAds/dev-status.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds#info=devDependencies)
 [![Project is in Beta Stage](https://img.shields.io/badge/stage-beta-orange.svg?style=flat-square)](#)
-[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-red.svg?style=flat-square)](#)
+[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-brightgreen.svg?style=flat-square)](#)
 
 
 This is a template for a nogorads landing page
