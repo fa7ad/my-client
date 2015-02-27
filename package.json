@@ -1,6 +1,6 @@
 {
-  "name": "foundation-libsass-template",
-  "version": "0.0.1",
+  "name": "nogorads-client-page",
+  "version": "0.0.2",
   "devDependencies": {
     "node-sass": "~2.0.1",
     "grunt": "~0.4.5",
