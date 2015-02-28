@@ -14,54 +14,61 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            grunt: {files: ['Gruntfile.js']},
+            grunt: {
+                files: ['Gruntfile.js']
+            },
 
             sass: {
                 files: 'scss/**/*.scss',
                 tasks: ['sass']
             },
-            uglify: {
+            concat: {
                 files: [
-                    'src/app.js',
-                    'components/jquery/dist/jquery.js',
-                    'components/jquery.easing/js/jquery.easing.js',
-                    'components/jquery.timers/jquery.timers.js',
-                    'components/modernizr/modernizr.js',
-                    'components/fastclick/lib/fastclick.js',
-                    'components/foundation/js/foundation.js',
-                    'src/galleryview3.js'
+                    'components/jquery/dist/jquery.min.js',
+                    'components/modernizr-min/modernizr.min.js',
+                    'components/foundation/js/foundation.min.js'
                 ],
+                tasks: ['concat']
+            },
+            uglify: {
+                files: ['src/app.js'],
                 tasks: ['uglify']
+            }
+        },
+        concat: {
+            options: {
+                separator: ';\n'
+            },
+            vendor: {
+                src: [
+                    'components/jquery/dist/jquery.min.js',
+                    'components/modernizr-min/modernizr.min.js',
+                    'components/foundation/js/foundation.min.js'
+                ],
+                dest: 'js/vendor.min.js'
             }
         },
         uglify: {
             options: {
                 mangle: false,
-		preserveComments: 'some'
+                preserveComments: 'some'
             },
-            target: {
+            app: {
                 files: {
-                    'js/app.min.js': ['src/app.js'],
-                    'js/vendor.min.js': [
-                        'components/jquery/dist/jquery.js',
-                        'components/jquery.easing/js/jquery.easing.js',
-                        'components/jquery.timers/jquery.timers.js',
-                        'components/modernizr/modernizr.js',
-                        'components/fastclick/lib/fastclick.js',
-                        'components/foundation/js/foundation.js',
-                        'src/galleryview3.js'
-
-                    ]
+                    'js/app.min.js': ['src/app.js']
                 }
             }
+
         }
+
     });
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('build', ['sass', 'uglify']);
+    grunt.registerTask('build', ['sass', 'concat', 'uglify']);
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('both',['build', 'watch']);
+    grunt.registerTask('both', ['build', 'watch']);
 };
