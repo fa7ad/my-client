@@ -21,17 +21,37 @@ module.exports = function (grunt) {
                 tasks: ['sass']
             },
             uglify: {
-                files: ['src/app.js'],
+                files: [
+                    'src/app.js',
+                    'components/jquery/dist/jquery.js',
+                    'components/jquery.easing/js/jquery.easing.js',
+                    'components/jquery.timers/jquery.timers.js',
+                    'components/modernizr/modernizr.js',
+                    'components/fastclick/lib/fastclick.js',
+                    'components/foundation/js/foundation.js',
+                    'src/galleryview3.js'
+                ],
                 tasks: ['uglify']
             }
         },
         uglify: {
             options: {
-                mangle: false
+                mangle: false,
+		preserveComments: 'some'
             },
             target: {
                 files: {
-                    'js/app.min.js': ['src/app.js']
+                    'js/app.min.js': ['src/app.js'],
+                    'js/vendor.min.js': [
+                        'components/jquery/dist/jquery.js',
+                        'components/jquery.easing/js/jquery.easing.js',
+                        'components/jquery.timers/jquery.timers.js',
+                        'components/modernizr/modernizr.js',
+                        'components/fastclick/lib/fastclick.js',
+                        'components/foundation/js/foundation.js',
+                        'src/galleryview3.js'
+
+                    ]
                 }
             }
         }

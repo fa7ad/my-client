@@ -1,12 +1,3 @@
-/*
-
-	GalleryView - jQuery Content Gallery Plugin
-	Author:		Jack Anderson
-	Version:	3.0 DEVELOPMENT
-
-  	See README.txt for instructions on how to markup your HTML
-*/
-
 // Make sure Object.create is available in the browser (for our prototypal inheritance)
 // Courtesy of Douglas Crockford
 if (typeof Object.create !== 'function') {

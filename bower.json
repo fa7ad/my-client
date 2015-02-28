@@ -4,6 +4,8 @@
     "foundation": "zurb/bower-foundation",
     "foundation-icon-fonts": "*",
     "jquery.easing": "~1.3.1",
-    "jquery.timers": "*"
+    "jquery.timers": "*",
+    "jquery.cookie": "~1.4.1",
+    "jquery-cookie": "~1.4.1"
   }
 }
