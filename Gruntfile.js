@@ -26,7 +26,9 @@ module.exports = function (grunt) {
                 files: [
                     'components/jquery/dist/jquery.min.js',
                     'components/modernizr-min/modernizr.min.js',
-                    'components/foundation/js/foundation.min.js'
+                    'components/foundation/js/foundation.min.js',
+                    'components/flexslider-scss/jquery.flexslider-min.js',
+                    'components/jquery-easing/jquery.easing.min.js'
                 ],
                 tasks: ['concat']
             },
@@ -43,7 +45,9 @@ module.exports = function (grunt) {
                 src: [
                     'components/jquery/dist/jquery.min.js',
                     'components/modernizr-min/modernizr.min.js',
-                    'components/foundation/js/foundation.min.js'
+                    'components/foundation/js/foundation.min.js',
+                    'components/flexslider-scss/jquery.flexslider-min.js',
+                    'components/jquery-easing/jquery.easing.min.js'
                 ],
                 dest: 'js/vendor.min.js'
             }

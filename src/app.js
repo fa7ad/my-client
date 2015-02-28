@@ -1,15 +1,17 @@
-(function(){
-    jQuery(window).load(function(){
+(function () {
+    jQuery(window).load(function () {
+        $('#formT').hide().removeClass('hide');
         $(document).foundation();
-        $('#imageSlide').galleryView({
-     		transition_interval: 2500,
-     		panel_width: 400,
-     		panel_height: 300,
-     		enable_overlays: true,
-     		panel_animation: 'crossfade',
-     		autoplay: true,
-     		filmstrip_position: 'right',
-     		show_infobar: false,
-		});
+        // Can also be used with $(document).ready()
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails"
+        });
+        // changing iframe's shadow
+        $("iframe .ss-form-container").css('box-shadow', 'none');
+        $('a[href="#formT"]').click(function(){
+            $(this).hide();
+            $('#formT').slideDown(2500).show();
+        });
     });
 })(jQuery);

@@ -1,3 +1,20 @@
 @import "settings";
 @import "../components/foundation/scss/foundation";
 @import "../components/foundation-icon-fonts/foundation-icons";
+@import "../components/flexslider-scss/flexslider";
+
+.beneath-1{
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hero-content {
+  background-color: #fff;
+  margin-top: 54px;
+  position: relative;
+  -webkit-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}

@@ -4,7 +4,8 @@
     "foundation": "zurb/bower-foundation",
     "foundation-icon-fonts": "*",
     "jquery.cookie": "~1.4.1",
-    "jquery-cookie": "~1.4.1",
-    "modernizr-min": "~2.8.3"
+    "modernizr-min": "~2.8.3",
+    "flexslider-scss": "~1.0.0",
+    "jquery-easing": "*"
   }
 }
