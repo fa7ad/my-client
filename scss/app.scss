@@ -20,4 +20,23 @@
   .row{
     padding-top: 2em;
   }
+  .panel .row{
+    padding: 0;
+  }
+}
+.logo-bottom{
+  display: flex;
+  -webkit-box-shadow: 2px 0 7px rgba(230, 145, 38, 0.7);
+  -moz-box-shadow: 2px 0 7px rgba(230, 145, 38, 0.7);
+  box-shadow: 2px 0 7px rgba(230, 145, 38, 0.7);
+  .logo-text{
+    padding: 5px 10px;
+  }
+}
+p{
+  font-size: 0.9rem;
+}
+a[href="#formT"].radius.button{
+  padding: 0.5em 1em;
+  font-size: 1.2em;
 }
