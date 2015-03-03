@@ -1,4 +1,10 @@
 module.exports = function (grunt) {
+    var vendor_src = [
+        'components/jquery/dist/jquery.min.js',
+        'components/modernizr-min/modernizr.min.js',
+        'components/foundation/js/foundation.min.js',
+        'components/flexslider-scss/jquery.flexslider-min.js',
+        'components/jquery-easing/jquery.easing.min.js'];
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -8,7 +14,7 @@ module.exports = function (grunt) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'css/app.css': 'scss/app.scss'
+                    'css/style.css': 'scss/style.scss'
                 }
             }
         },
@@ -23,18 +29,16 @@ module.exports = function (grunt) {
                 tasks: ['sass']
             },
             concat: {
-                files: [
-                    'components/jquery/dist/jquery.min.js',
-                    'components/modernizr-min/modernizr.min.js',
-                    'components/foundation/js/foundation.min.js',
-                    'components/flexslider-scss/jquery.flexslider-min.js',
-                    'components/jquery-easing/jquery.easing.min.js'
-                ],
+                files: vendor_src,
                 tasks: ['concat']
             },
             uglify: {
                 files: ['src/app.js'],
                 tasks: ['uglify']
+            },
+            copy: {
+                files: ['components/jquery.cookie/jquery.cookie.js'],
+                tasks: ['copy']
             }
         },
         concat: {
@@ -42,13 +46,7 @@ module.exports = function (grunt) {
                 separator: ';\n'
             },
             vendor: {
-                src: [
-                    'components/jquery/dist/jquery.min.js',
-                    'components/modernizr-min/modernizr.min.js',
-                    'components/foundation/js/foundation.min.js',
-                    'components/flexslider-scss/jquery.flexslider-min.js',
-                    'components/jquery-easing/jquery.easing.min.js'
-                ],
+                src: vendor_src,
                 dest: 'js/vendor.min.js'
             }
         },
@@ -65,10 +63,9 @@ module.exports = function (grunt) {
 
         },
         copy: {
-            holderjs: {
-                files: {
-
-                }
+            jq_cookie: {
+                src: 'components/jquery.cookie/jquery.cookie.js',
+                dest: 'js/jquery.cookie.js'
             }
         }
 
