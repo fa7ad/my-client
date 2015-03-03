@@ -10,7 +10,7 @@
         // changing iframe's shadow
         $("iframe .ss-form-container").css('box-shadow', 'none');
         $('a[href="#formT"]').click(function () {
-            $(this).text('আবার দেখুন');
+            $(this).html('<i class="fi-arrow-down"></i> ফর্ম');
             $('#formT').slideDown(2500).show();
             $('html, body').animate({
                 scrollTop: $("footer").offset().top

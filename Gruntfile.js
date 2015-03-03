@@ -63,6 +63,13 @@ module.exports = function (grunt) {
                 }
             }
 
+        },
+        copy: {
+            holderjs: {
+                files: {
+
+                }
+            }
         }
 
     });
@@ -71,8 +78,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('build', ['sass', 'concat', 'uglify']);
+    grunt.registerTask('build', ['sass', 'concat', 'uglify', 'copy']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('both', ['build', 'watch']);
 };

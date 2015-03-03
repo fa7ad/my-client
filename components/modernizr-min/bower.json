@@ -1,0 +1,16 @@
+{
+  "name": "modernizr-min",
+  "version": "2.8.3",
+  "homepage": "https://github.com/chatii2412/modernizr-min",
+  "authors": [
+    "Wooram Jun <chatii2412@gmail.com>"
+  ],
+  "description": "Minified version of Modernizr.",
+  "keywords": [
+    "modernizr"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "modernizr": "2.8.3"
+  }
+}

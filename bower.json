@@ -6,6 +6,7 @@
     "jquery.cookie": "~1.4.1",
     "modernizr-min": "~2.8.3",
     "flexslider-scss": "~1.0.0",
-    "jquery-easing": "*"
+    "jquery-easing": "*",
+    "holderjs": "~2.5.2"
   }
 }
