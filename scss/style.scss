@@ -36,10 +36,6 @@ body {
   .panel .row {
     padding: 0;
   }
-  #item-description {
-    border: 1px #333 solid;
-    padding: 0;
-  }
 }
 
 .logo-bottom {
@@ -68,20 +64,9 @@ a[href="#formT"].radius.button {
   padding: 0.5em 1em;
   font-size: 1.2em;
 }
-
-.tabs {
-  background: #333;
-  .tab-title {
-    a:hover {
-      color: #333;
-    }
-    a {
-      background: #333;
-      color: #fff;
-      .active {
-        background: #fff;
-        color: #333;
-      }
-    }
-  }
+.item-desc{
+  display: none;
+}
+.item-desc.active{
+  display: block;
 }

@@ -5,7 +5,12 @@
         // Can also be used with $(document).ready()
         $('.flexslider').flexslider({
             animation: "slide",
-            controlNav: "thumbnails"
+            controlNav: "thumbnails",
+            after: function(){
+                var active_rel = $('.flex-active-slide').attr('rel');
+                $('.item-desc').removeClass('active');
+                $(active_rel).addClass('active');
+            }
         });
         $('a[href="#formT"]').click(function () {
             $(this).html('<i class="fi-arrow-down"></i> ফর্ম');
