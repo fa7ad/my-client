@@ -27,9 +27,12 @@
             transition: '0.3s',
             scrolllock: true
         });
-        timer(16000, function(s){
+        /*timer(16000, function(s){
             $('.counter').text(s);
         }, function(){
+            $('#my_popup').popup('hide');
+        });*/
+        $('#close_popup').click(function(){
             $('#my_popup').popup('hide');
         });
     });
