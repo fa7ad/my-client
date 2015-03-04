@@ -8,5 +8,8 @@
     "flexslider-scss": "~1.0.0",
     "jquery-easing": "*",
     "fontawesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "colors": "~2.2.0"
   }
 }

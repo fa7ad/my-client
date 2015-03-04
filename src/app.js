@@ -19,6 +19,7 @@
                 scrollTop: $("footer").offset().top
             }, 2500);
         });
+        //$('#FBook').click();
 
     });
 })(jQuery);

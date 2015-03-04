@@ -18,29 +18,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-        watch: {
-            grunt: {
-                files: ['Gruntfile.js']
-            },
-
-            sass: {
-                files: 'scss/**/*.scss',
-                tasks: ['sass']
-            },
-            concat: {
-                files: vendor_src,
-                tasks: ['concat']
-            },
-            uglify: {
-                files: ['src/app.js'],
-                tasks: ['uglify']
-            },
-            copy: {
-                files: ['components/jquery.cookie/jquery.cookie.js'],
-                tasks: ['copy']
-            }
-        },
         concat: {
             options: {
                 separator: ';\n'
@@ -59,6 +36,11 @@ module.exports = function (grunt) {
                 files: {
                     'js/app.min.js': ['src/app.js']
                 }
+            },
+            fb_sdk: {
+                files: {
+                    'js/fb_sdk.min.js': ['src/fb_sdk.js']
+                }
             }
 
         },
@@ -66,6 +48,28 @@ module.exports = function (grunt) {
             jq_cookie: {
                 src: 'components/jquery.cookie/jquery.cookie.js',
                 dest: 'js/jquery.cookie.js'
+            }
+        },
+        watch: {
+            grunt: {
+                files: ['Gruntfile.js']
+            },
+
+            sass: {
+                files: 'scss/**/*.scss',
+                tasks: ['sass']
+            },
+            concat: {
+                files: vendor_src,
+                tasks: ['concat']
+            },
+            uglify: {
+                files: ['src/app.js', 'src/fb_sdk.js'],
+                tasks: ['uglify']
+            },
+            copy: {
+                files: ['components/jquery.cookie/jquery.cookie.js'],
+                tasks: ['copy']
             }
         }
 
@@ -78,6 +82,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('build', ['sass', 'concat', 'uglify', 'copy']);
-    grunt.registerTask('default', ['build']);
-    grunt.registerTask('both', ['build', 'watch']);
+    grunt.registerTask('init', ['build']);
+    grunt.registerTask('default', ['build', 'watch']);
 };

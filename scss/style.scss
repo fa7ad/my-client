@@ -40,12 +40,10 @@ body {
 
 .logo-bottom {
   display: flex;
-  -webkit-box-shadow: 2px 0 5px #f61;
-  -moz-box-shadow: 2px 0 5px #f61;
-  box-shadow: 2px 0 5px #f61;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  border: 2px solid #f62;;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   img {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -69,4 +67,18 @@ a[href="#formT"].radius.button {
 }
 .item-desc.active{
   display: block;
+}
+#myModal{
+  width: 7em;
+  top: 33% !important;
+  background-color: transparent;
+  border: none;
+}
+.reveal-modal-bg{
+  background: rgba(0, 0, 0, 0.97);
+}
+@media screen and (max-width: 640px){
+  #myModal{
+    left: 33.33%;
+  }
 }

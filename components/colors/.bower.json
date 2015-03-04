@@ -1,0 +1,37 @@
+{
+  "name": "Colors",
+  "version": "2.2.0",
+  "homepage": "https://github.com/mrmrs/colors",
+  "authors": [
+    "@mrmrs <hi@mrmmrs.cc>"
+  ],
+  "description": "Better colors for the web.",
+  "keywords": [
+    "colors",
+    "web",
+    "hex",
+    "sass",
+    "scss",
+    "coffee",
+    "less",
+    "stylus",
+    "myth",
+    "css",
+    "better colors"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "index.html",
+    "site.css"
+  ],
+  "_release": "2.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.2.0",
+    "commit": "9b23a5ee7c209c38e14fbe82adf208504cec2a2a"
+  },
+  "_source": "git://github.com/mrmrs/colors.git",
+  "_target": "~2.2.0",
+  "_originalSource": "colors",
+  "_direct": true
+}
