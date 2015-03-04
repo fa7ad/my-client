@@ -7,7 +7,8 @@
     "modernizr-min": "~2.8.3",
     "flexslider-scss": "~1.0.0",
     "jquery-easing": "*",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "jquery.popup.overlay": "~1.7.6"
   },
   "devDependencies": {
     "colors": "~2.2.0"

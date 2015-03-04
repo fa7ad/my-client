@@ -37,9 +37,9 @@ module.exports = function (grunt) {
                     'js/app.min.js': ['src/app.js']
                 }
             },
-            fb_sdk: {
+            jquery_popupoverlay: {
                 files: {
-                    'js/fb_sdk.min.js': ['src/fb_sdk.js']
+                    'js/popup.overlay.min.js': ['components/jquery.popup.overlay/jquery.popupoverlay.js']
                 }
             }
 
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
                 tasks: ['concat']
             },
             uglify: {
-                files: ['src/app.js', 'src/fb_sdk.js'],
+                files: ['src/**/*.js'],
                 tasks: ['uglify']
             },
             copy: {
