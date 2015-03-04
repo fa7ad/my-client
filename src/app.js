@@ -23,7 +23,7 @@
             autoopen: true,
             blur:   false,
             color: 'white',
-            opacity: 1,
+            opacity: 0.8,
             transition: '0.3s',
             scrolllock: true
         });
