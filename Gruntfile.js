@@ -8,13 +8,10 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        sass: {
-            dist: {
+        compass: {
+            style: {
                 options: {
-                    outputStyle: 'compressed'
-                },
-                files: {
-                    'css/style.css': 'scss/style.scss'
+                    config: 'config.rb'
                 }
             }
         },
@@ -34,15 +31,9 @@ module.exports = function (grunt) {
             },
             app: {
                 files: {
-                    'js/app.min.js': ['src/app.js']
-                }
-            },
-            jquery_popupoverlay: {
-                files: {
-                    'js/popup.overlay.min.js': ['components/jquery.popup.overlay/jquery.popupoverlay.js']
+                    'js/app.min.js': 'src/app.js'
                 }
             }
-
         },
         copy: {
             jq_cookie: {
@@ -55,9 +46,9 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
 
-            sass: {
+            compass: {
                 files: 'scss/**/*.scss',
-                tasks: ['sass']
+                tasks: ['compass']
             },
             concat: {
                 files: vendor_src,
@@ -75,13 +66,13 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('build', ['sass', 'concat', 'uglify', 'copy']);
+    grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy']);
     grunt.registerTask('init', ['build']);
     grunt.registerTask('default', ['build', 'watch']);
 };
