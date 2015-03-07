@@ -73,6 +73,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy']);
-    grunt.registerTask('init', ['build']);
+    grunt.registerTask('js', ['concat', 'uglify', 'copy']);
     grunt.registerTask('default', ['build', 'watch']);
 };

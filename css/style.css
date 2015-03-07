@@ -14661,77 +14661,6 @@ a[href="#formT"].radius.button {
 }
 
 /* line 87, ../scss/style.scss */
-.spinner {
-  margin: 100px auto;
-  width: 32px;
-  height: 32px;
-  position: relative;
-}
-
-/* line 94, ../scss/style.scss */
-.cube1, .cube2 {
-  background-color: #333;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-animation: cubemove 1.8s infinite ease-in-out;
-  animation: cubemove 1.8s infinite ease-in-out;
-}
-
-/* line 106, ../scss/style.scss */
-.cube2 {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-
-@-webkit-keyframes cubemove {
-  25% {
-    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-  }
-  50% {
-    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-  }
-  75% {
-    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-@keyframes cubemove {
-  25% {
-    transform: translateX(42px) rotate(-90deg) scale(0.5);
-    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-  }
-  50% {
-    transform: translateX(42px) translateY(42px) rotate(-179deg);
-    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
-  }
-  50.1% {
-    transform: translateX(42px) translateY(42px) rotate(-180deg);
-    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-  }
-  75% {
-    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-  }
-  100% {
-    transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-  }
-}
-/* line 149, ../scss/style.scss */
-.counter {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 25px;
-  font-size: 20px;
-}
-
-/* line 157, ../scss/style.scss */
 .single-close {
   color: #111;
   top: 0;
@@ -14739,7 +14668,7 @@ a[href="#formT"].radius.button {
   left: 0;
 }
 
-/* line 164, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 .fb_like {
   position: absolute;
   left: 50%;
@@ -14750,7 +14679,7 @@ a[href="#formT"].radius.button {
   -ms-transform: translate(-50%, -50%);
 }
 
-/* line 173, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .x-center {
   position: absolute;
   left: 50%;
@@ -14761,7 +14690,7 @@ a[href="#formT"].radius.button {
   transform: translateX(-50%);
 }
 
-/* line 182, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .y-center {
   position: absolute;
   left: 50%;

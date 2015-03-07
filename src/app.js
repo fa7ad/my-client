@@ -15,16 +15,27 @@
         });
         $('#my_popup').popup({
             autoopen: true,
+            blur: true,
             color: 'white',
             opacity: 0.8,
             transition: '0.3s',
             scrolllock: true
         });
-        $('#close_popup').click(function(){
+        $('#close_popup').click(function () {
             $('#my_popup').popup('hide');
         });
-        setTimeout(function(){
+        setTimeout(function () {
             $('#my_popup').popup('hide');
         }, 30000);
+        var itimer;
+        $('iframe').hover(function () {
+            window.clearTimeout(itimer);
+            itimer = window.setTimeout(function () {
+                console.log('success');
+                $('#my_popup').popup('hide');
+            }, 2500);
+        }, function () {
+            window.clearTimeout(itimer);
+        });
     });
 })(jQuery);
