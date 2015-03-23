@@ -1,0 +1,19 @@
+<div class="beneath-1">
+    <div class="row secondary">
+        <div class="large-2 small-12 columns">
+            <a href="#">
+                {% if site.logo %}
+                <img src="{{ site.logo }}" alt="{{ site.title }}">
+                {% else %}
+                {{ site.title }}
+                {% endif %}
+            </a>
+        </div>
+        <div class="large-6 hide-for-small-down columns"></div>
+        <div class="large-4 small-12 columns">
+            <a href="#" class="right radius button warning">
+                <i class="fa fa-hand-o-right"></i> Get a page for your product
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,10 +1,11 @@
-module.exports = function (grunt) {
-    var vendor_src = [
+module.exports = function(grunt) {
+    var _vendor_src = [
         'components/jquery/dist/jquery.min.js',
         'components/modernizr-min/modernizr.min.js',
         'components/foundation/js/foundation.min.js',
         'components/flexslider-scss/jquery.flexslider-min.js',
-        'components/jquery-easing/jquery.easing.min.js'];
+        'components/jquery-easing/jquery.easing.min.js'
+    ];
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -20,7 +21,7 @@ module.exports = function (grunt) {
                 separator: ';\n'
             },
             vendor: {
-                src: vendor_src,
+                src: _vendor_src,
                 dest: 'js/vendor.min.js'
             }
         },
@@ -41,6 +42,13 @@ module.exports = function (grunt) {
                 dest: 'js/jquery.cookie.js'
             }
         },
+        jekyll: {
+            dist: {
+                options: {
+                    config: '_config.yml'
+                }
+            }
+        },
         watch: {
             grunt: {
                 files: ['Gruntfile.js']
@@ -51,16 +59,16 @@ module.exports = function (grunt) {
                 tasks: ['compass']
             },
             concat: {
-                files: vendor_src,
+                files: _vendor_src,
                 tasks: ['concat']
             },
             uglify: {
                 files: ['src/**/*.js'],
                 tasks: ['uglify']
             },
-            copy: {
-                files: ['components/jquery.cookie/jquery.cookie.js'],
-                tasks: ['copy']
+            jekyll: {
+                files: ['_includes/**/*.*', '_layouts/**/*.*', '_config.yml'],
+                tasks: ['jekyll']
             }
         }
 
@@ -71,8 +79,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-jekyll');
 
-    grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy']);
+    grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy', 'jekyll']);
     grunt.registerTask('js', ['concat', 'uglify', 'copy']);
     grunt.registerTask('default', ['build', 'watch']);
 };

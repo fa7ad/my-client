@@ -1,0 +1,16 @@
+<footer>
+    <div class="row">
+        <div class="large-6 columns">
+            <ul class="inline-list left">
+                {% for foot in site.footer.links %}
+                <li>
+                    <a href="{{ foot.link }}">{{ foot.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="large-6 columns">
+            <p>© 2015 {{ site.footer.credits }}</p>
+        </div>
+    </div>
+</footer>

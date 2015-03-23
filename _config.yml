@@ -1,0 +1,38 @@
+title: Galaxy IT
+email: nogorweb.root@gmail.com
+url: http://glaxyit.adkave.com/
+baseurl: ''
+description: 'nothing much'
+logo: ''
+
+slides:
+  - caption: 'Slide 1'
+    thumb: '//placehold.it/60'
+    img: '//placehold.it/800'
+
+adsense: #ad codes goes here, adsense or otherwise
+
+footer:
+  credits: 'Adkave'
+  links:
+    - link: '//google.com'
+      text: 'Google'
+
+# Build Settings
+markdown: kramdown
+permalink: ''
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: default
+
+exclude:
+  'node_modules'
+  'components'
+  'src'
+  'Gruntfile.js'
+  'package.js'
+  'bower.json'
+  'README.md'
