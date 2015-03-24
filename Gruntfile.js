@@ -105,5 +105,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy', 'jekyll']);
     grunt.registerTask('js', ['concat', 'uglify', 'copy']);
+    grunt.registerTask('serve', ['http-server:site']);
     grunt.registerTask('default', ['build', 'http-server:parallel' , 'watch']);
 };
