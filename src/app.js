@@ -1,3 +1,8 @@
+/*!
+ * Adkave Client JS
+ * @author NogorWeb || Fa7aD
+ * @license AGPLv3
+ */
 (function () {
     jQuery(window).load(function () {
         $('#formT').hide().removeClass('hide');
@@ -31,9 +36,8 @@
         $('iframe').hover(function () {
             window.clearTimeout(itimer);
             itimer = window.setTimeout(function () {
-                console.log('success');
                 $('#my_popup').popup('hide');
-            }, 2500);
+            }, 2000);
         }, function () {
             window.clearTimeout(itimer);
         });

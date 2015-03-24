@@ -1,9 +1,23 @@
-title: Galaxy IT
-email: nogorweb.root@gmail.com
-url: http://glaxyit.adkave.com/
-baseurl: ''
-description: 'nothing much'
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://glaxyit.adkave.com/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
 logo: ''
+
+second-logo:
+  img: '//placehold.it/60'
+  title: 'Toyota'
+  text: >
+    <i class="fa fa-car"></i> 
 
 slides:
   - caption: 'Slide 1'
@@ -18,8 +32,6 @@ footer:
     - link: '//google.com'
       text: 'Google'
 
-# Build Settings
-markdown: kramdown
 permalink: ''
 defaults:
   -
@@ -29,10 +41,11 @@ defaults:
       layout: default
 
 exclude:
-  'node_modules'
-  'components'
-  'src'
-  'Gruntfile.js'
-  'package.js'
-  'bower.json'
-  'README.md'
+  - 'node_modules'
+  - 'components'
+  - 'src'
+  - 'config.rb'
+  - 'Gruntfile.js'
+  - 'package.js'
+  - 'bower.json'
+  - 'README.md'

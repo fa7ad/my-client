@@ -49,13 +49,34 @@ module.exports = function(grunt) {
                 }
             }
         },
+        'http-server': {
+            'site': {
+                root: '_site',
+                port: 4000,
+                host: "0.0.0.0",
+                showDir: true,
+                autoIndex: true,
+                ext: "html",
+                runInBackground: false
+            },
+            'parallel': {
+                root: '_site',
+                port: 4000,
+                host: "0.0.0.0",
+                showDir: true,
+                autoIndex: true,
+                ext: "html",
+                runInBackground: true
+            }
+
+        },
         watch: {
             grunt: {
                 files: ['Gruntfile.js']
             },
 
             compass: {
-                files: 'scss/**/*.scss',
+                files: '_sass/**/*.scss',
                 tasks: ['compass']
             },
             concat: {
@@ -80,8 +101,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-jekyll');
+    grunt.loadNpmTasks('grunt-http-server');
 
     grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy', 'jekyll']);
     grunt.registerTask('js', ['concat', 'uglify', 'copy']);
-    grunt.registerTask('default', ['build', 'watch']);
+    grunt.registerTask('default', ['build', 'http-server:parallel' , 'watch']);
 };
