@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    require('load-grunt-tasks')(grunt);
+
     var _vendor_src = [
         'components/jquery/dist/jquery.min.js',
         'components/modernizr-min/modernizr.min.js',
@@ -95,16 +97,8 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-jekyll');
-    grunt.loadNpmTasks('grunt-http-server');
-
     grunt.registerTask('build', ['compass', 'concat', 'uglify', 'copy', 'jekyll']);
     grunt.registerTask('js', ['concat', 'uglify', 'copy']);
     grunt.registerTask('serve', ['http-server:site']);
-    grunt.registerTask('default', ['build', 'http-server:parallel' , 'watch']);
+    grunt.registerTask('default', ['build', 'http-server:parallel', 'watch']);
 };
