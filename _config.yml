@@ -1,15 +1,6 @@
 # Site settings
 title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://glaxyit.adkave.com/" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
+url: "http://glaxyit.adkave.com/"
 
 logo: ''
 
@@ -24,6 +15,21 @@ slides:
     thumb: '//placehold.it/60'
     img: '//placehold.it/800'
 
+desc:
+  type: para
+  heading: Some nice header text.
+  text: >
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Id incidunt ipsa beatae necessitatibus illum, deleniti, dicta ab harum eaque,
+  distinctio dolore dolorum sapiente laudantium accusamus architecto porro repudiandae temporibus cumque.
+# type: table
+# title: Awesome Item
+# price: '1,000,000'
+# warn: a very nice warning to spammers
+# items:
+#   - icon: car
+#     text: Dodge Charger
+
 adsense: #ad codes goes here, adsense or otherwise
 
 footer:
@@ -31,6 +37,10 @@ footer:
   links:
     - link: '//google.com'
       text: 'Google'
+
+###############################################################################
+# Build settings
+markdown: kramdown
 
 permalink: ''
 defaults:

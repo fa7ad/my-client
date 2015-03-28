@@ -1,27 +1,20 @@
 <div class="large-8 columns" id="item-description">
+    {% if site.desc.type == 'table' %}
     <div class="item-desc active" id="panel1">
         <ul class="pricing-table">
-            <li class="title">Toyota X Corolla</li>
-            <li class="price">৳ 1,200,000.00</li>
+            <li class="title">{{ site.desc.title }}</li>
+            <li class="price">৳ {{ site.desc.price }}</li>
+            {% for item in site.desc.items %}
             <li class="bullet-item">
-                <i class="fa-calendar-o fa"></i> 2005 Model
+                <i class="fa-{{ item.icon }} fa"></i> {{ item.text }}
             </li>
-            <li class="bullet-item">
-                <i class="fa fa-pencil-square-o"></i> Registered in 2009
-            </li>
-            <li class="bullet-item">
-                <i class="fa-paint-brush fa"></i> Silver coloured exterior
-            </li>
-            <li class="bullet-item">
-                <i class="fi-battery-half"></i> CNG + Octane
-            </li>
-            <li class="bullet-item">
-                <i class="fa-gears fa"></i> AC + TV + DVD Player
-            </li>
+            {% endfor %}
+            {% if site.desc.warn %}
             <li class="description">
-                <i class="fa-warning fa"></i> Do not contact if you are a car dealer.
+                <i class="fa-warning fa"></i> {{ site.desc.warn }}
                 <br/>
             </li>
+            {% endif %}
             <li class="cta-button">
                 <a class="button" href="#formT">
                     <i class="fi-telephone"></i> Contact us to buy
@@ -29,4 +22,11 @@
             </li>
         </ul>
     </div>
+    {% endif %}
+    {% if site.desc.type == 'para' %}
+    <div class="container-fluid">
+        <h2>{{ site.desc.heading }}</h2>
+        <p>{{ site.desc.text }}</p>
+    </div>
+    {% endif %}
 </div>
