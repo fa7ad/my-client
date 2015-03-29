@@ -5,7 +5,7 @@
 [![CC-BY-SA License](https://img.shields.io/badge/License-CC--BY--SA-brightgreen.svg?style=flat-square)](#)
 
 
-This is a template for a nogorads landing page
+This is a template for a nogorads clients' landing page
 
 ## Requirements
 
@@ -20,9 +20,10 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 ```bash
-git clone git@gitlab.com:nogrweb-git/nogorads.git
+git clone git@gitlab.com:nogrweb-git/nogorads-client.git
 npm install
 bower install
+grunt build
 ```
 
 While you're working on your project, run:
