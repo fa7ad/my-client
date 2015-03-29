@@ -19,9 +19,9 @@ desc:
   type: para
   heading: Some nice header text.
   text: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  Id incidunt ipsa beatae necessitatibus illum, deleniti, dicta ab harum eaque,
-  distinctio dolore dolorum sapiente laudantium accusamus architecto porro repudiandae temporibus cumque.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Id incidunt ipsa beatae necessitatibus illum, deleniti, dicta ab harum eaque,
+    distinctio dolore dolorum sapiente laudantium accusamus architecto porro repudiandae temporibus cumque.
 # type: table
 # title: Awesome Item
 # price: '1,000,000'
