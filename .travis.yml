@@ -10,15 +10,15 @@ branches:
 language: node_js
 node_js: 
   - "stable"
-  - "iojs"
 
 before_install:
   - 'npm install -g grunt-cli bower'
   - 'gem install jekyll'
+  - 'gem install compass'
 
 install: 
-  - 'bower install'
-  - 'npm install'
+  - 'bower install --verbose'
+  - 'npm install --verbose'
 
 script:
   - 'grunt build'
