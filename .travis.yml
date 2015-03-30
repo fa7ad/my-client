@@ -10,10 +10,9 @@ branches:
 language: node_js
 node_js: 
   - "stable"
-sudo: required
 
 before_install:
-  - 'sudo npm install -g grunt-cli bower'
+  - 'npm install -g grunt-cli bower'
   - 'gem install jekyll'
   - 'gem install compass'
 
