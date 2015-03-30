@@ -1,9 +1,9 @@
 env:
   global:
     - secure: >
-      DBVeO0TKWu3Cw72uMe0aZy1IvJ+mBUOvuC+XaVRjE95/akGdsvz2I6NmDuHLCzl9/UiS5SYZzcOetMmoukpuK1dhlgpeS9MxzG4z9QW+jVGk5tAzrXnrWE5k8CQFHXoHAPqIsRpj8W/XLzao6L09vAruYRmGAm2URH9K1434sHQ=
+        DBVeO0TKWu3Cw72uMe0aZy1IvJ+mBUOvuC+XaVRjE95/akGdsvz2I6NmDuHLCzl9/UiS5SYZzcOetMmoukpuK1dhlgpeS9MxzG4z9QW+jVGk5tAzrXnrWE5k8CQFHXoHAPqIsRpj8W/XLzao6L09vAruYRmGAm2URH9K1434sHQ=
     - secure: >
-      Odl1pMZ233aZiZAojckdd5I2HxGL5by8T6zhGFKYxmdbulGn2ABAqWsYT3F6EF2QDf5JhfqkGttbiQzuNbWY+wGkubOxdns90A2pVMc3yVAQZPc7t/gAprjSDJ4O+bb9/Bs1dSYgXuMnx2UxlBzsefad3PgsXHbhwtIj4yVVR/4=
+        Odl1pMZ233aZiZAojckdd5I2HxGL5by8T6zhGFKYxmdbulGn2ABAqWsYT3F6EF2QDf5JhfqkGttbiQzuNbWY+wGkubOxdns90A2pVMc3yVAQZPc7t/gAprjSDJ4O+bb9/Bs1dSYgXuMnx2UxlBzsefad3PgsXHbhwtIj4yVVR/4=
 branches:
   only: master
 
