@@ -1,8 +1,13 @@
 env:
   global:
     - "FTP_USER=galaxyit"
+# FTP_PASSWORD
     - secure: >
         P4xwNyo+IbmFd9ukDWUjH6JAXn77uWSSw4a1unjI+JPngRjFAWNud5YA/9XPaOlXinSjBtIuBjX0LX8l3ntYsTW5j4ZvWR5l4ijjFO9woodMqK7NiEQfyNBTXfZ37gZ4XSfJB2LybMgJYBx4/jNb39ZhzdJ2IJ/IziMHpe6cqgU=
+# API Key
+    - "sham_key=xXxAPIKEYxXx"
+    - secure: >
+        f7WWnzuey0r5XgBXnLhZXwiQJkFBFBHtxq+cLvBS9UsmXmvuW85XhJgB/cTezFSlWsrjjQ6k7fvFrUhr46Pd5GcwLMsuZkIAYg6K7dWRkQL2w5lWm41LKbgJ1y3oEqdC7vxGx8Kv/Hk2Ag3tEbki4b4N1ecBw0N8msHMKSC0VPA=
 branches:
   only: master
 
@@ -20,6 +25,7 @@ install:
   - 'npm install'
 
 script:
+  - 'sed -i -e "s/$sham_key/$API_KEY/g" ./_includes/_form.html'
   - 'grunt build'
 
 after_success:
