@@ -1,27 +1,29 @@
 # Site settings
-title: Your awesome title
+title: Galaxy IT
 url: "http://glaxyit.adkave.com/"
 
-logo: ''
+logo: 'img/adkave.png'
 
 second-logo:
-  img: '//placehold.it/60'
-  title: 'Toyota'
+  img: 'img/logo.png'
+  title: 'Galaxy IT'
   text: >
-    <i class="fa fa-car"></i> 
+    <i class="fa fa-globe"></i> IT solutions from a different Galaxy
 
 slides:
   - caption: 'Slide 1'
-    thumb: '//placehold.it/60'
-    img: '//placehold.it/800'
+    thumb: ''
+    img: 'img/responsive.jpeg'
 
 desc:
   type: para
-  heading: Some nice header text.
+  heading: Best IT solutions in the galaxy
   text: >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Id incidunt ipsa beatae necessitatibus illum, deleniti, dicta ab harum eaque,
-    distinctio dolore dolorum sapiente laudantium accusamus architecto porro repudiandae temporibus cumque.
+    <p>Galaxy IT provides the best Lorem ipsum dolor sit amet, ]
+    consectetur adipisicing elit. Perferendis vel iusto itaque, 
+    sapiente illum! Optio assumenda, 
+    consectetur veniam suscipit minima officia vel itaque. 
+    Aperiam odio, recusandae quisquam dolorum quibusdam. Esse.</p>
 # type: table
 # title: Awesome Item
 # price: '1,000,000'
@@ -37,8 +39,9 @@ analytics: UA-61372863-1
 footer:
   credits: 'Adkave'
   links:
-    - link: '//google.com'
-      text: 'Google'
+    - link: '//adkave.com'
+      text: 'Adkave'
+    - link: '//'
 
 ###############################################################################
 # Build settings

@@ -1,8 +1,8 @@
-#Uncomment all the commented lines & Remove this line
-# env:
-#   global:
-#     - "FTP_USER=adkave_travis"
-#     - "FTP_PASSWORD=m3m3dotcom"
+env:
+  global:
+    - "FTP_USER=galaxyit"
+    - secure: >
+        P4xwNyo+IbmFd9ukDWUjH6JAXn77uWSSw4a1unjI+JPngRjFAWNud5YA/9XPaOlXinSjBtIuBjX0LX8l3ntYsTW5j4ZvWR5l4ijjFO9woodMqK7NiEQfyNBTXfZ37gZ4XSfJB2LybMgJYBx4/jNb39ZhzdJ2IJ/IziMHpe6cqgU=
 branches:
   only: master
 
@@ -23,5 +23,5 @@ script:
   - 'grunt build'
 
 after_success:
-#  - 'cd _site && find . -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://nogorweb.com/{} \;'
+  - 'cd _site && find . -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://nogorweb.com/{} \;'
   - 'echo Done :D'
