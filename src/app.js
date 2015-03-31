@@ -37,7 +37,7 @@
             window.clearTimeout(itimer);
             itimer = window.setTimeout(function () {
                 $('#my_popup').popup('hide');
-            }, 2000);
+            }, 700);
         }, function () {
             window.clearTimeout(itimer);
         });
