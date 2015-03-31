@@ -1,6 +1,6 @@
 # NogorAds client landing page template
-[![Dependency Status](https://david-dm.org/fa7ad/NogorAds.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds)
-[![devDependency Status](https://david-dm.org/fa7ad/NogorAds/dev-status.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds#info=devDependencies)
+[![Dependency Status](https://david-dm.org/fa7ad/adkave-client.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds)
+[![devDependency Status](https://david-dm.org/fa7ad/adkave-client/dev-status.svg?style=flat-square)](https://david-dm.org/fa7ad/NogorAds#info=devDependencies)
 [![Project is in Beta Stage](https://img.shields.io/badge/stage-beta-orange.svg?style=flat-square)](#)
 [![CC-BY-SA License](https://img.shields.io/badge/License-CC--BY--SA-brightgreen.svg?style=flat-square)](#)
 [![Build Status](https://travis-ci.org/fa7ad/adkave-client.svg?branch=master&style=flat-square)](https://travis-ci.org/fa7ad/adkave-client)
