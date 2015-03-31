@@ -1,3 +1,4 @@
+#Uncomment all the commented lines & Remove this line
 # env:
 #   global:
 #     - "FTP_USER=adkave_travis"
