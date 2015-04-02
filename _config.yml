@@ -4,6 +4,8 @@ url: "http://glaxyit.adkave.com/"
 
 logo: 'img/adkave.png'
 
+client_slug: 'galaxyit' # slug for the sql table name
+
 second-logo:
   img: 'img/logo.png'
   title: 'Galaxy IT'
